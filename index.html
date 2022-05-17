@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>The Altruism Survey Form</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <div class="fonts">
+            <link
+                href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+                rel="stylesheet"
+            />
+
+            <link
+                href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap"
+                rel="stylesheet"
+            />
+
+            <link
+                href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap"
+                rel="stylesheet"
+            />
+
+            <link
+                href="https://fonts.googleapis.com/css2?family=Road+Rage&display=swap"
+                rel="stylesheet"
+            />
+
+            <link
+                href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap"
+                rel="stylesheet"
+            />
+        </div>
+
+        <h1 id="title">The Altruism Survey Form</h1>
+        <p id="description">
+            This survey will help us understand exactly what you love, dislike
+            and want to improve on!
+        </p>
+        <div id="last-try">
+            <form id="survey-form">
+                <div id="test-vibes">
+                    <div class="name-div">
+                        <label id="name-label"> Name</label><br />
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Full Name"
+                            required
+                        />
+                    </div>
+
+                    <div class="email-div">
+                        <label id="email-label"> Email Address</label><br />
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Email Address"
+                            required
+                        />
+                    </div>
+
+                    <div class="bodycount-div">
+                        <label id="number-label">
+                            Bodycount<span class="number-clue"
+                                >(mandatory)</span
+                            ></label
+                        >
+                        <input
+                            type="number"
+                            id="number"
+                            placeholder="Bodycount"
+                            min="0"
+                            max="1000"
+                        />
+                    </div>
+
+                    <div class="dropdown-div">
+                        <p>What skill level do you consider yourself?</p>
+                        <div class="another-dropdown">
+                            <select id="dropdown" required>
+                                <option disabled selected value="">
+                                    Select skill level
+                                </option>
+                                <option>Novice</option>
+                                <option>Advanced Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Expert</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="radio-div">
+                        <p id="early-night">When do you perform the best?</p>
+                        <label for="earlybird">
+                            <input
+                                id="earlybird"
+                                value="earlybird"
+                                type="radio"
+                                name="earlybird-nightowl"
+                            />
+                            Morning</label
+                        ><br />
+
+                        <label for="nightowl">
+                            <input
+                                id="nightowl"
+                                value="nightowl"
+                                type="radio"
+                                name="earlybird-nightowl"
+                            />
+                            Night
+                        </label>
+                    </div>
+
+                    <div class="checkbox-div">
+                        <p id="improve-on">
+                            Which sections would you like improvement on?
+                        </p>
+                        <label for="intro">
+                            <input
+                                value="intro"
+                                id="intro"
+                                type="checkbox"
+                                name="song-sections"
+                            />Intro</label
+                        ><br />
+
+                        <label for="prechorus">
+                            <input
+                                value="prechorus"
+                                id="prechorus"
+                                type="checkbox"
+                                name="song-sections"
+                            />Endurance</label
+                        ><br />
+
+                        <label for="chorus">
+                            <input
+                                value="chorus"
+                                id="chorus"
+                                type="checkbox"
+                                name="song-sections"
+                            />Positions</label
+                        ><br />
+
+                        <label for="verse">
+                            <input
+                                value="verse"
+                                id="verse"
+                                type="checkbox"
+                                name="song-sections"
+                            />Techniques</label
+                        ><br />
+
+                        <label for="bridge">
+                            <input
+                                value="bridge"
+                                id="bridge"
+                                type="checkbox"
+                                name="song-sections"
+                            />Pillow Talk</label
+                        ><br />
+
+                        <label for="outro">
+                            <input
+                                value="outro"
+                                id="outro"
+                                type="checkbox"
+                                name="song-sections"
+                            />Next Morning</label
+                        >
+                    </div>
+
+                    <div class="additional-comments">
+                        <p>Any comments or suggestions?</p>
+                        <textarea
+                            name="additional-comments"
+                            placeholder="Enter your comment here..."
+                            id="additional-comments"
+                        ></textarea>
+                    </div>
+
+                    <div class="button-div">
+                        <button id="submit" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
